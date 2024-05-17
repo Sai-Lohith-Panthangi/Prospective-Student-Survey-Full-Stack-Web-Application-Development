@@ -44,9 +44,7 @@ This project is a full-stack web application that allows prospective students to
 4. **Generate Components**
    ```bash
    ng generate component welcomePage
-   ```bash
    ng generate component Survey_form
-   ```bash
    ng generate component All_Survey_List
 5. **Setup Angular Router**
    ```bash
