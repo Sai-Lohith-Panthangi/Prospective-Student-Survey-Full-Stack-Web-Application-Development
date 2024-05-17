@@ -6,11 +6,6 @@ Developed a full-stack web app using Angular for the frontend and Spring Boot fo
 ## Overview
 This project is a full-stack web application that allows prospective students to share feedback about their campus visits via a survey form. Users can submit their feedback and view all survey records submitted so far. The project leverages the latest versions of Angular for the frontend and Spring Boot for the backend. CRUD operations are implemented to enhance user interaction.
 
-## Team Members
-- Sai Lohith Panthangi - G01389946
-- Kalaivani Palani - G01455734
-- Mounaraga Annavaram - G01411743
-
 ## Technologies Used
 - Frontend: Angular, Node.js
 - Backend: Spring Boot, RESTful Web Services, Spring Data JPA
@@ -44,54 +39,58 @@ This project is a full-stack web application that allows prospective students to
    ```bash
    npm install -g @angular/cli
 3. **Create a New Angular Project**
-ng new Project_frontend_Angular
+   ```bash
+   ng new Project_frontend_Angular
 4. **Generate Components**
-ng generate component welcomePage
-ng generate component Survey_form
-ng generate component All_Survey_List
+   ```bash
+   ng generate component welcomePage
+   ```bash
+   ng generate component Survey_form
+   ```bash
+   ng generate component All_Survey_List
 5. **Setup Angular Router**
-ng generate module app-routing --flat --module=app
+   ```bash
+   ng generate module app-routing --flat --module=app
 6. **Update app-routing.module.ts to define routes for the components.**
 7. **Configure App Module**
 - Import necessary modules: BrowserModule, HttpClientModule, FormsModule, ReactiveFormsModule, and AppRoutingModule.
 - Declare components and provide services.
-
 8. **Generate and Implement Services**
-ng generate service Survey_form
+   ```bash
+   ng generate service Survey_form
 9. **Run the Angular Application**
-ng serve
+   ```bash
+   ng serve
 
 ### Backend Setup (Spring Boot):
 
 1. **Navigate to Spring Initializr**
 - Generate a Maven project with dependencies: Spring Web, Spring Data JPA, MySQL Driver.
-
 2. **Setup MySQL Database**
 - Download and install MySQL Server and Workbench from the official MySQL website.
 - Create a database and tables as required.
-
 3. **Configure Spring Boot Application**
 - Update application.properties for MySQL connection.
 - Add JPA properties as needed.
-
 4. **Define Entity, Repository, and Controller**
 - Create Surveyform.java entity class.
 - Create SurveyformRepository interface extending JpaRepository.
 - Create SurveyformController class with CRUD endpoints.
-
 5. **CORS Configuration**
 - Configure CORS to allow requests from the frontend application.
-
 6. **Run the Spring Boot Application**
-mvn spring-boot:run
+   ```bash
+   mvn spring-boot:run
 
 
 ### Running the Full-Stack Application:
 
 1. **Start the Backend (Spring Boot)**
-mvn spring-boot:run
+   ```bash
+   mvn spring-boot:run
 2. **Start the Frontend (Angular)**
-ng serve
+   ```bash
+   ng serve
 3. **Access the Application**
 - Open a browser and navigate to http://localhost:4200.
 
